@@ -1,0 +1,117 @@
+/*Colors and fonts */
+body{
+  background-color: #F7F9FC;
+  color: #575F7D;
+  font-family: 'Lora', serif;
+  font-size: 17px;
+  font-weight: lighter;
+}
+h1,h2,h3{
+  font-family: 'Roboto', sans-serif;
+}
+h1{
+  color: #575F7D;
+  font-weight: 900;
+  /* letter-spacing: 10px; */
+  font-size: 32px;
+}
+h2{
+  color: #7ECE90;
+  font-size: 20px;
+  font-weight:300;
+}
+a{
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: #6B72E1;
+  font-weight: 600;
+  font-size: 16px;
+}
+a:hover {
+  color: black;
+}
+
+/* for laptop and desktop screens */
+/* is here to center the page content using automatic left and right margins to prevent the content from taking 100% of the window, which would be ugly
+To center the container, just have to set its width, and then fix an automatic margin on the right and left
+*/
+.container{
+  width: 700px;
+  margin: 40px auto;
+}
+/*
+is used to group information into a nice white box with a nice shadow. 
+
+*/
+.card-white{
+  background-color: white;
+  /* to put some space between the div border and its content. Otherwise, the content will stick to the div’s border. */
+  padding: 40px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin: 20px 0px;
+  text-align: center;
+}
+.card-white:hover{
+  width: 200px;
+}
+.img-circle{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 3px black;
+}
+.btn-blue{
+  background-color: #6B72E1;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 4px;
+}
+/* this over-rides the css for a:hover */
+.btn-blue:hover{
+  background-color:black;
+  color:white;
+}
+.list-inline{
+  list-style: none; /* removes the bullet from the list */
+  padding-left: 0px;
+}
+.list-inline li{
+  display: inline;
+  pading:10px;
+}
+.list-inline i{
+  font-size: 50px;
+  color:rgb(230,230,230);
+}
+.list-inline i:hover{
+  color:black;
+}
+#introduction p{
+  margin-bottom: 40px;
+}
+/* for tablet */
+@media (max-width: 760px){
+  .container {
+    /*background-color: red;*/
+    width: 600px;
+  }
+}
+/* for mobile */
+@media (max-width: 500px){
+  .container {
+    /*background-color: red;*/
+    width: 400px;
+  }
+}
+
+/*
+div{
+  background-color: white;
+  padding: 60px;
+  margin: 50px;
+  border: 2px solid black;
+  border-radius: 4px;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+}
+*/
